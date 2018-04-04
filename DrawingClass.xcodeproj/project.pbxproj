@@ -14,6 +14,7 @@
 		84213DED2074D37A00D4D715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84213DEC2074D37A00D4D715 /* Assets.xcassets */; };
 		84213DF02074D37A00D4D715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84213DEE2074D37A00D4D715 /* LaunchScreen.storyboard */; };
 		84213DF82074E14C00D4D715 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84213DF72074E14C00D4D715 /* AddStudentViewController.swift */; };
+		84213DFA207503CE00D4D715 /* StudentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84213DF9207503CE00D4D715 /* StudentDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84213DEF2074D37A00D4D715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84213DF12074D37A00D4D715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84213DF72074E14C00D4D715 /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		84213DF9207503CE00D4D715 /* StudentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				84213DE22074D37A00D4D715 /* AppDelegate.swift */,
 				84213DE42074D37A00D4D715 /* TableViewController.swift */,
 				84213DF72074E14C00D4D715 /* AddStudentViewController.swift */,
+				84213DF9207503CE00D4D715 /* StudentDetails.swift */,
 				84213DE62074D37A00D4D715 /* Main.storyboard */,
 				84213DEC2074D37A00D4D715 /* Assets.xcassets */,
 				84213DEE2074D37A00D4D715 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				84213DF82074E14C00D4D715 /* AddStudentViewController.swift in Sources */,
 				84213DEB2074D37A00D4D715 /* DrawingClass.xcdatamodeld in Sources */,
 				84213DE52074D37A00D4D715 /* TableViewController.swift in Sources */,
+				84213DFA207503CE00D4D715 /* StudentDetails.swift in Sources */,
 				84213DE32074D37A00D4D715 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
