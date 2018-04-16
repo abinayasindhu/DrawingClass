@@ -13,7 +13,7 @@
         <!--Add Student View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AddStudentViewController" customModule="DrawingClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddStudent" id="BYZ-38-t0r" customClass="AddStudentViewController" customModule="DrawingClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
         <!--Student Details-->
         <scene sceneID="rjd-Rm-51k">
             <objects>
-                <viewController id="ik7-xd-gmS" customClass="StudentDetails" customModule="DrawingClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ik7-xd-gmS" customClass="StudentDetails" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pif-6p-nP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,11 @@
                         <viewLayoutGuide key="safeArea" id="KFE-i3-LU9"/>
                     </view>
                     <connections>
+                        <outlet property="ageTextField" destination="327-dW-afd" id="Ms2-7Y-S8n"/>
+                        <outlet property="dobTextField" destination="j6f-7q-rMI" id="dPL-5X-SMX"/>
+                        <outlet property="feesPaidTextField" destination="Mvr-eA-eUd" id="GU7-fS-v1L"/>
+                        <outlet property="joiningDateTextField" destination="8Fm-r4-Lda" id="4P8-fO-wib"/>
+                        <outlet property="nameTextField" destination="9RA-Z0-wMN" id="NAf-4R-hu1"/>
                         <outlet property="saveButton" destination="gMA-kj-Xu3" id="4Qh-1F-Wux"/>
                     </connections>
                 </viewController>
@@ -271,23 +276,39 @@
             </objects>
             <point key="canvasLocation" x="1492" y="498"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="aAi-Ok-jbx">
             <objects>
-                <tableViewController id="PWg-bP-9lR" customClass="TableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StudentList" id="PWg-bP-9lR" customClass="ViewController" customModule="DrawingClass" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="48M-YZ-Oir">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" id="91u-2I-4JE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" rowHeight="80" id="91u-2I-4JE" customClass="StudentListCell" customModule="DrawingClass" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="91u-2I-4JE" id="n73-9s-Jo9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEG-Q0-37N">
+                                            <rect key="frame" x="30" y="26.5" width="150" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="6wX-do-nAR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tEG-Q0-37N" firstAttribute="centerY" secondItem="n73-9s-Jo9" secondAttribute="centerY" id="OV5-GQ-EAG"/>
+                                        <constraint firstItem="tEG-Q0-37N" firstAttribute="leading" secondItem="n73-9s-Jo9" secondAttribute="leading" constant="30" id="lP9-Wg-DJ1"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="studentName" destination="tEG-Q0-37N" id="Pi1-zE-kRe"/>
                                     <segue destination="ik7-xd-gmS" kind="show" id="4zN-gc-qFl"/>
                                 </connections>
                             </tableViewCell>
@@ -309,7 +330,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ny-AQ-uHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="134"/>
+            <point key="canvasLocation" x="752.79999999999995" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1br-vq-8B0">

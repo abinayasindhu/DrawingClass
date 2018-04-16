@@ -11,6 +11,11 @@ import UIKit
 class StudentDetails: UIViewController {
     
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var dobTextField: UITextField!
+    @IBOutlet weak var joiningDateTextField: UITextField!
+    @IBOutlet weak var feesPaidTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
