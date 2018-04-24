@@ -63,17 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				84213DE22074D37A00D4D715 /* AppDelegate.swift */,
+				8426C1642088A4C4005B5891 /* Controller */,
+				8426C1652088A4E4005B5891 /* View */,
+				8426C1672088A503005B5891 /* Model */,
+				8426C1662088A4EE005B5891 /* Supporting files */,
+				84213DF12074D37A00D4D715 /* Info.plist */,
+			);
+			path = DrawingClass;
+			sourceTree = "<group>";
+		};
+		8426C1642088A4C4005B5891 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				84213DE42074D37A00D4D715 /* ViewController.swift */,
 				84213DF72074E14C00D4D715 /* AddStudentViewController.swift */,
 				84213DF9207503CE00D4D715 /* StudentDetails.swift */,
 				84DDFD6E2077720E000062B4 /* StudentListCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8426C1652088A4E4005B5891 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				84213DE62074D37A00D4D715 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8426C1662088A4EE005B5891 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				84213DEC2074D37A00D4D715 /* Assets.xcassets */,
 				84213DEE2074D37A00D4D715 /* LaunchScreen.storyboard */,
-				84213DF12074D37A00D4D715 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8426C1672088A503005B5891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				84213DE92074D37A00D4D715 /* DrawingClass.xcdatamodeld */,
 			);
-			path = DrawingClass;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
